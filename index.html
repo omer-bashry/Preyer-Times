@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مواقيت الصلوات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="all-items">
+      <div class="container">
+        <div class="item-cont position-relative zindex-4 pb-4">
+          <div id="aya" class="pt-5">
+            <h1>
+              قال تعالى:﴿إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا
+              مَوْقُوتًا﴾
+            </h1>
+            <p>
+              صدق الله العظيم <br />
+              النساء (103)
+            </p>
+            <h5>اختر مدينة لمعرفة اوقات الصلوات فيها :</h5>
+          </div>
+          <div id="content">
+            <div
+              id="citys"
+              class="citys-cls d-flex justify-content-center align-items-center gap-3 pb-3 pt-3 mb-3 flex-wrap"
+            >
+              <div
+                class="city selected"
+                id="Khartoum"
+                onclick="getTimes(this.id, this)"
+              >
+                Khartoum
+              </div>
+              <div class="city" id="Madani" onclick="getTimes(this.id, this)">
+                Madani
+              </div>
+              <div
+                class="city"
+                id="Portsudan"
+                onclick="getTimes(this.id, this)"
+              >
+                Portsudan
+              </div>
+              <div class="city" id="Sinar" onclick="getTimes(this.id, this)">
+                Sinar
+              </div>
+              <div
+                class="city"
+                id="El-Manaqil"
+                onclick="getTimes(this.id, this)"
+              >
+                El-Manaqil
+              </div>
+              <div class="city" id="El-Obeid" onclick="getTimes(this.id, this)">
+                El-Obeid
+              </div>
+              <div class="city" id="Marawi" onclick="getTimes(this.id, this) ">
+                Marawi
+              </div>
+            </div>
+            <div id="times" class="times p-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Times.js"></script>
+  </body>
+</html>

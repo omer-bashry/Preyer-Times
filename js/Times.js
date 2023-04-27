@@ -1,5 +1,5 @@
 function getTimes(city, el) {
-  let url = `http://api.aladhan.com/v1/timingsByCity/:date?city=${city}&country=Sudan`;
+  let url = `https://api.aladhan.com/v1/timingsByCity/:date?city=${city}&country=Sudan`;
   axios
     .get(url)
     .then((response) => {
